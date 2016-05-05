@@ -1,8 +1,8 @@
-application:institutoeducativo-1302
+application: institutoeducativo-1302
 version: 2
 runtime: php55
 api_version: 1
 
 handlers:
 - url: /.*
-  script: inde.php
+  script: inicio.php

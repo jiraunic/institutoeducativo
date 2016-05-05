@@ -1,0 +1,11 @@
+{
+  "project_name": "institutoeducativo-1320",
+  
+"project_description": "Proyecto de materia servicios en la nube",
+  
+"show_files": [
+    "inde.php",
+ "cabecera.php", "pie.php", "Estilo.css"   ,"app.yaml"
+  ],
+  
+}

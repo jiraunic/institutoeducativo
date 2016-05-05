@@ -1,4 +1,5 @@
 {
+<<<<<<< Workspace
   "project_name": "Hello World - PHP",
   "project_description": "Starter code for a Google App Engine app in PHP.",
   "show_files": [
@@ -8,7 +9,21 @@
  "Estilo.css" ,
  "app.yaml"
  
+||||||| Baseline
+  "project_name": "Hello World - PHP",
+  "project_description": "Starter code for a Google App Engine app in PHP.",
+  "show_files": [
+    "helloworld.php",
+    "app.yaml"
+=======
+  "project_name": "institutoeducativo-1320",
+  
+"project_description": "Proyecto de materia servicios en la nube",
+  
+"show_files": [
+    "inde.php",
+ "cabecera.php", "pie.php", "Estilo.css"   ,"app.yaml"
+>>>>>>> Alias
   ],
-  "read_only_demo_url": "https://try-php-demo-dot-cloud-playground.appspot.com/",
-  "download_filename": "appengine-try-php.zip"
+  
 }

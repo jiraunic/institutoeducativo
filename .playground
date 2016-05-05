@@ -5,7 +5,8 @@
     "inde.php",
  "cabecera.php", 
  "pie.php", 
- "Estilo.css" ,"app.yaml"
+ "Estilo.css" ,
+ "app.yaml"
  
   ],
   "read_only_demo_url": "https://try-php-demo-dot-cloud-playground.appspot.com/",

@@ -5,7 +5,7 @@
   
 "show_files": [
     "inde.php",
- "cabecera.php", "pie.php", "Estilo.css"   ,"app.yaml"
+ "cabecera.php", "pie.php", "Estilo.css", "inicio.php" ,"app.yaml"
   ],
   
 }

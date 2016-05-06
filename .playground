@@ -3,10 +3,10 @@
   "project_description": "Starter code for a Google App Engine app in PHP.",
   "show_files": [
     "inde.php",
- "cabecera.php", 
+ "cabecera.php",
  "pie.php", 
- "Estilo.css" ,
- "app.yaml"
- 
+"Estilo.css", 
+"inicio.php" ,
+"app.yaml"
   ],
 }

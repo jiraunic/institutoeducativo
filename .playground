@@ -1,11 +1,7 @@
 {
-  "project_name": "institutoeducativo-1320",
-  "project_description": "Starter code for a Google App Engine app in PHP.",
-  "show_files": [
-    "inde.php",
- "cabecera.php",
- "pie.php", 
-"Estilo.css", 
+  "project_name": "serviciosenlanubetec",
+  "project_description": "Aplicacion de desarrollo calse.",
+  "show_files": [ 
 "inicio.php" ,
 "app.yaml"
   ],

@@ -9,7 +9,7 @@ handlers:
   static_dir: css
 
 - url: /
-  script: inicio.php
+  script: Inicio.php
 
 - url: /inicio.php
   script: Inicio.php

@@ -1,8 +1,7 @@
 {
   "project_name": "serviciosenlanubetec",
-  "project_description": "Aplicacion de desarrol.",
-  "show_files": [
- 
+  "project_description": "Aplicacion de desarrollo calse.",
+  "show_files": [ 
 "inicio.php" ,
 "app.yaml"
   ],

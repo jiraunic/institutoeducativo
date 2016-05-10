@@ -3,6 +3,12 @@ version: 1
 runtime: php55
 api_version: 1
 
+env_variables:
+  # Replace project, instance, database, user and password with the values obtained
+  # when configuring your Cloud SQL instance.
+  MYSQL_DSN: mysql:unix_socket=/cloudsql/PROJECT:iec;dbname=iec
+  MYSQL_USER: root
+  MYSQL_PASSWORD: 'principal'
 
 handlers:
 - url: /css

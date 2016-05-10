@@ -1,8 +1,8 @@
 {
-  "project_name": "serviciosnubetec",
-  "project_description": "Aplicacion de desarrollo calse.",
-  "show_files": [ 
-"inicio.php" ,
-"app.yaml"
+  project_name: serviciosnubetec,
+  project_description: Aplicacion de desarrollo calse.,
+  show_files: [ 
+inicio.php ,
+app.yaml
   ],
 }

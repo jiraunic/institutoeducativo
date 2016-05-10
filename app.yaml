@@ -12,7 +12,7 @@ handlers:
   script: inicio.php
 
 - url: /inicio.php
-  script: nicio.php
+  script: Inicio.php
 
 - url: /AgregarAlumno.php
   script: AgregarAlumno.php

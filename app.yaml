@@ -11,7 +11,7 @@ handlers:
 - url: /
   script: Inicio.php
 
-- url: /nicio.php
+- url: /Inicio.php
   script: Inicio.php
 
 - url: /AgregarAlumno.php

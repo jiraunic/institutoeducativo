@@ -17,10 +17,4 @@ $sql = new mysqli(
   '/cloudsql/serviciosnubetec:basededatosiec'
   );
 
-// Using MySQL API (connecting from App Engine)
-$conn = mysql_connect(':/cloudsql/serviciosnubetec:basededatosiec',
-  'root', // username
-  'toor'      // password
-  );
-
 ?>

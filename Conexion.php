@@ -1,9 +1,26 @@
 <?php
 // datos para la conexion a mysql
-define('DB_SERVER','192.168.1.67');
-define('DB_NAME','IEC');
-define('DB_USER','perickles');
-define('DB_PASS','perickles');
-$con = mysql_connect(DB_SERVER,DB_USER,DB_PASS);
-mysql_select_db(DB_NAME,$con);
+// Using PDO_MySQL (connecting from App Engine)
+$db = new pdo(
+  'mysql:unix_socket=/cloudsql/serviciosnubetec:basededatosiec',
+  'root',  // username
+  'toor'       // password
+);
+
+// Using mysqli (connecting from App Engine)
+$sql = new mysqli(
+  null, // host
+  'root', // username
+  'toor',     // password
+  'iec', // database name
+  null,
+  '/cloudsql/serviciosnubetec:basededatosiec'
+  );
+
+// Using MySQL API (connecting from App Engine)
+$conn = mysql_connect(':/cloudsql/serviciosnubetec:basededatosiec',
+  'root', // username
+  'toor'      // password
+  );
+
 ?>

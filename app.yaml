@@ -6,9 +6,9 @@ api_version: 1
 env_variables:
   # Replace project, instance, database, user and password with the values obtained
   # when configuring your Cloud SQL instance.
-  MYSQL_DSN: mysql:unix_socket=/cloudsql/PROJECT:basededatosiec;dbname=iec
+  MYSQL_DSN: mysql:unix_socket=/cloudsql/serviciosnubetec:basededatosiec;dbname=iec
   MYSQL_USER: root
-  MYSQL_PASSWORD: 'toor
+  MYSQL_PASSWORD: toor
 
 
 handlers:

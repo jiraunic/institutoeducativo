@@ -1,29 +1,18 @@
-application: serviciosnubetec
+application: serviciosenlanubetec
 version: 1
 runtime: php55
 api_version: 1
-
-env_variables:
-  # Replace project, instance, database, user and password with the values obtained
-  # when configuring your Cloud SQL instance.
-  MYSQL_DSN: mysql:unix_socket=/cloudsql/serviciosnubetec:basededatosiec;dbname=iec
-  MYSQL_USER: root
-  MYSQL_PASSWORD: toor
 
 
 handlers:
 - url: /css
   static_dir: css
 
-- url: /jquery
-  static_dir: jquery
-
-
 - url: /
-  script: inde.php
+  script: inicio.php
 
 - url: /inicio.php
-  script: Inicio.php
+  script: inicio.php
 
 - url: /AgregarAlumno.php
   script: AgregarAlumno.php
@@ -31,9 +20,9 @@ handlers:
 - url: /agregarcalificacion.php
   script: agregarcalificacion.php
 
-- url: /agregardocumentacion.php
-  script: agregardocumentacion.php
-
+ - url: /agregardocumentaion.php
+  script: agregardocumentaion.php
+ 
 - url: /AgregarMaestro.php
   script: AgregarMaestro.php
 
@@ -91,11 +80,11 @@ handlers:
 - url: /mostrarmaestro.php
   script: mostrarmaestro.php
 
-- url: /relacion.php
+- url: /Relacion.php
   script: Relacion.php
 
-- url: /relacionalumnodocuemnto.php
-  script: relacionalumnodocuemnto.php
+- url: /relacionalumnodocumento.php
+  script: relacionalumnodocumento.php
 
 - url: /relacionmm.php
   script: relacionmm.php
@@ -112,11 +101,11 @@ handlers:
 - url: /reporteprofesional.php
   script: reporteprofesional.php
 
-- url: /reportes.php
+- url: /Reportes.php
   script: Reportes.php
 
 - url: /reportesecretariado.php
   script: reportesecretariado.php
 
-- url: /tipocalificaion.php
-  script: tipocalificaion.php
+- url: /tipocalificacion.php
+  script: tipocalificacion.php

@@ -47,9 +47,17 @@ if(isset($_POST['Alumno']))
     }
 }
 ?>
-<?php include("cabecera.php"); ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema de control escolar IEC/IEEC</title>
+
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="css/Estilo.css">
+<script src="jquery-2.2.3.js" type="text/javascript"></script> 
 <link rel="stylesheet" type="text/css" href="css\Estilo.css">
-<form method="" action="agregarAlumno.php">
+<form method="" action="AgregarAlumno.php">
 </br>
     <div><input name="Alumno" type="submit" value="Regresar"></div>
 </form>
@@ -57,3 +65,5 @@ if(isset($_POST['Alumno']))
     <div><input name="Alumno" type="submit" value="Regresar a inicio"></div>
 </form>
 <?php include("pie.php"); ?>
+</body>
+</html>

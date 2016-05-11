@@ -1,5 +1,4 @@
 <?php
-<?php
 // datos para la conexion a mysql
 // Using PDO_MySQL (connecting from App Engine)
 $db = new pdo(

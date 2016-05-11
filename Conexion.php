@@ -23,5 +23,5 @@ $conn = mysql_connect(':/cloudsql/serviciosnubetec:basededatosiec',
   'root', // username
   'toor'      // password
   );
-?>
+
 ?>

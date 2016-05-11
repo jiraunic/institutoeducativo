@@ -8,7 +8,7 @@ env_variables:
   # when configuring your Cloud SQL instance.
   MYSQL_DSN: mysql:unix_socket=/cloudsql/PROJECT:basededatosiec;dbname=iec
   MYSQL_USER: root
-  MYSQL_PASSWORD: 't'
+  MYSQL_PASSWORD: 'toor'
 
 
 handlers:

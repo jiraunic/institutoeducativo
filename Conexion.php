@@ -1,6 +1,6 @@
 <?php
 // datos para la conexion a mysql
-define('DB_SERVER','127.0.0.1');
+define('DB_SERVER','192.168.1.67');
 define('DB_NAME','IEC');
 define('DB_USER','perickles');
 define('DB_PASS','perickles');

@@ -1,7 +1,4 @@
 <?php include("cabecera.php"); ?>
-<script src="jquery-2.2.3.js" type="text/javascript"></script> 
-<link rel="stylesheet" type="text/css" href="css\Estilo.css">
-<title>Agreagar Maestro</title>
 <h1>Agregar Maestro</h1>
 <form action="maestro.php" method="post" class="Maestro">
     <div><label>Nombre  </label></div>

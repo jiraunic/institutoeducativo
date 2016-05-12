@@ -1,19 +1,17 @@
 <?php
-include_once "Conexion.php"
+include_once "conexion.php";
 
 $sql="SELECT id_alumno, CONCAT(nombre_alumno, ' ', apellido_alumno) from alumnos where area='Preparatoria';";
-$result =  mysql_query($sql); 
+$result =  mysqli_query($con, $sql); 
 
     $combobit=" <option value='0'></option>";
     $numero =0;
-    while ($row = mysql_fetch_row($result)){ 
+    while ($row = mysqli_fetch_row($result)){ 
         $combobit .=" <option value='".$row[0]."'>".$row[1]."</option>";
     }
 
     ?>
 <?php include("cabecera.php"); ?>
-<link rel="stylesheet" type="text/css" href="css\Estilo.css">
-<script src="jquery-2.2.3.js" type="text/javascript"></script> 
 <h1>Reporte de pago alumno</h1>
 <form  action="reportealumno.php" target="_blank" method="post" class="Alumno" id="alumno">
 

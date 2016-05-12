@@ -9,12 +9,6 @@
   );
 */
 
-// Using PDO_MySQL (connecting from App Engine)
-$db = new pdo(
-  'mysql:unix_socket=/cloudsql/serviciosnubetec:basededatosiec',
-  'root',  // username
-  ''       // password
-);
 
 // Using mysqli (connecting from App Engine)
 $sql = new mysqli(

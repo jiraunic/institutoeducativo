@@ -1,17 +1,6 @@
 <?php
 include_once "conexion.php";
 
-function imprimir()
-{
-
-    $result = mysql_query("SELECT * FROM documentos"); 
-    echo "<table border = '1'> \n"; 
-    echo "<tr><td>ID Documento</td><td>Descripcion Documento</td></tr> \n"; 
-    while ($row = mysql_fetch_row($result)){ 
-       echo "<tr><td>$row[0]</td><td>$row[1]</td></tr> \n"; 
-} 
-    echo "</table></br> \n";
-}
 
 if(isset($_POST['documentacion']))
 {
@@ -23,9 +12,8 @@ if(isset($_POST['documentacion']))
     {
         $desc = $_POST['documento'];
         $sql = "INSERT INTO documentos (descripcion_documento) VALUES ('$desc')";
-        mysql_query($sql);
+        mysqli_query($con, $sql);
         echo 'Documento agregado con exito.';   
-        imprimir();
     }
 }
 ?>

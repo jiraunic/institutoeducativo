@@ -12,11 +12,11 @@ if(isset($_POST['enviar']))
 		else
 		{
 	    $sql="SELECT * FROM alumnodocumento where id_alumno = '$nocont' and id_documento='$doc'";
-		 $numero = mysql_num_rows(mysql_query($sql));
+		 $numero = mysqli_num_rows(mysqli_query($con, $sql));
 		 if($numero!=0)
 		 {
 		 	$sql="UPDATE alumnodocumento SET `id_estatus`='$est' WHERE id_alumno='$nocont' and id_documento='$doc' ";
-		 	 mysql_query($sql);
+		 	 mysqli_query($con, $sql);
 		 	echo "Documento actualizado exitosamente";
 
 		 	
@@ -24,7 +24,7 @@ if(isset($_POST['enviar']))
 		 else
 		 {
 		 	$sql="INSERT INTO alumnodocumento(id_alumno, id_documento, id_estatus) VALUES ('$nocont', '$doc', '$est')";
-		 	 mysql_query($sql);
+		 	 mysqli_query($con, $sql);
 		 	echo "Documento agregado exitosamente";
 		 
 		 }

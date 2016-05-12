@@ -118,13 +118,13 @@ $mespago= $mespago." del ".$ano;
 // obtenemos la cuota del alumno si el pago a realizar es de la mensualidad
 if ($tipomovimiento=='1') {
 	$sql="SELECT cuota from convenio where id_alumno='$nocontrol'";
-$result =  mysql_query($sql); 
-$row = mysql_fetch_row($result);
+$result =  mysqli_query($con, $sql); 
+$row = mysqli_fetch_row($result);
 
 $cuot = $row[0];
 $sql="SELECT SUM(monto) FROM `alumnopago` WHERE `id_alumno`='$nocontrol' and `fecha`='$mespago' and id_pago='3'";
-$result =  mysql_query($sql); 
-$row1 = mysql_fetch_row($result);
+$result =  mysqli_query($con, $sql); 
+$row1 = mysqli_fetch_row($result);
 $rest = $cuot - $import-$row1[0];
 }
 if ($row1[0]>=$cuot and $movimiento==1) {
@@ -145,8 +145,8 @@ else
 
 // obtenemos el nombre completo del alumno y el area en el que se ubica, por ejemplo preparatoria, profesional o secretariado
 $sql="SELECT CONCAT(nombre_alumno, ' ', apellido_alumno), area FROM alumnos where id_alumno='$nocontrol'";
-$result =  mysql_query($sql); 
-$row1 = mysql_fetch_row($result);
+$result =  mysqli_query($con, $sql); 
+$row1 = mysqli_fetch_row($result);
 
 $fecha = $dia." de ".$mes." de ".$ano;
 
@@ -159,7 +159,7 @@ echo $import;
 echo $mespag ;
 
 
-/*
+
 // creacion del documento PDF como reporte de pago de alumno
 $pdf = new FPDF();
 $pdf->AddPage();
@@ -192,14 +192,14 @@ if ($tipomovimiento == 1)
 	{
 	$sql = "SELECT * FROM alumnopago where id_alumno='$nocontrol' and id_pago='5' and fecha='$mespago'";
 	// se calcula el costo de la multa siempre y cuando no se haya pagado ya de ese mes
-	$result =  mysql_query($sql); 
-	$num = mysql_num_rows($result);
+	$result =  mysqli_query($con, $sql); 
+	$num = mysqli_num_rows($result);
 	//Verificamos si existe o no registro del pago de una multa de ese mes, si no existe se calcula el costo de la multa y se inserta el dato en la base de datos
 		if($num==0)
 		{
 			$multa= $diasmulta*5;
 			$sql = "INSERT INTO alumnopago (id_alumno, id_pago, monto, fecha) VALUES ('$nocontrol', '5', '$multa', '$mespago')";
-			mysql_query($sql);
+			mysqli_query($con, $sql);
 			$pdf->Cell(70, 10, 'Multa: ', 1, 'r', true);
 			$pdf->Cell(40, 10, $multa, 0);
 			$pdf->Ln(10);
@@ -229,10 +229,10 @@ $pdf->Ln(10);
 $pdf->Cell(70, 10, $row1[0], 0, 'c', true);
 $pdf->Output();
 $sql = "INSERT INTO alumnopago (id_alumno, id_pago, monto, fecha) VALUES ('$nocontrol', '3', '$import', '$mespago')";
-mysql_query($sql); 
+mysqli_query($con, $sql); 
 }
 
-*/
+
 
 }
 

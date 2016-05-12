@@ -15,7 +15,7 @@ include_once "conexion.php";
                 $idalum  = $_POST['nocontrol'];
                 $idmate  = $_POST['idmateria'];
                 $sql = "SELECT * FROM maestromateria where id_maestro = '$idmaes' and id_materia ='$idmate'";
-                $numero = mysql_num_rows(mysql_query($sql));
+                $numero = mysqli_num_rows(mysqli_query($con, $sql));
                 if($numero == 0)
                 {
                     echo 'El maestro seleccionado no imparte la materia seleccionada';
@@ -24,7 +24,7 @@ include_once "conexion.php";
                 {
 
                 $sql = "INSERT INTO calificaciones(id_materia, id_maestro, id_alumno, calificacion, periodo) VALUES ('$idmate', '$idmaes', '$idalum', '$calific', '$per')";
-                mysql_query($sql);
+                mysqli_query($con, $sql);
                 echo 'Calificacion agregada con exito.';   
                 }
             }

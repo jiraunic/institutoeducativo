@@ -9,7 +9,6 @@
   );
 */
 
-
 // Using mysqli (connecting from App Engine)
 $sql = new mysqli(
   null, // host

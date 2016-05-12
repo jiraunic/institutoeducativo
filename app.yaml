@@ -11,7 +11,7 @@ env_variables:
 =======
   MYSQL_USER: 'root'
   MYSQL_PASSWORD: 'toor'
->>>>>>> origin/master
+
 
 
 handlers:

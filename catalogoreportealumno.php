@@ -1,5 +1,5 @@
 <?php
-
+incl
 
 $sql="SELECT id_alumno, CONCAT(nombre_alumno, ' ', apellido_alumno) from alumnos where area='Preparatoria';";
 $result =  mysql_query($sql); 

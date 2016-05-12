@@ -8,8 +8,7 @@ env_variables:
   # when configuring your Cloud SQL instance.
   MYSQL_DSN: mysql:unix_socket=/cloudsql/serviciosnubetec:basededatosiec;dbname=iec
 <<<<<<< HEAD
-  MYSQL_USER: root
-  MYSQL_PASSWORD: toor
+  
 =======
   MYSQL_USER: 'root'
   MYSQL_PASSWORD: 'toor'

@@ -7,6 +7,6 @@ $sql = new mysqli(
   null,
   '/cloudsql/serviciosnubetec:basededatosiec'
   );
-mysql_select_db(iec,$sql);
+
 
 ?>

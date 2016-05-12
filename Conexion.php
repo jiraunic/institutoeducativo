@@ -20,7 +20,7 @@ $db = new pdo(
 $sql = new mysqli(
   null, // host
   'root', // username
-  '',     // password
+  'toor',     // password
   '', // database name
   null,
   '/cloudsql/serviciosnubetec:basededatosiec'

@@ -3,7 +3,7 @@ include_once "conexion.php";
 $nocont = $_POST['nocontrol'];
 
 function imprimir()
-{
+{   global $con;
 	$nocont = $_POST['nocontrol'];
     $sql2="SELECT documentos.descripcion_documento, catalogoestatus.descripcion_estatus FROM documentos inner JOIN alumnodocumento on documentos.id_documento=alumnodocumento.id_documento inner JOIN catalogoestatus on alumnodocumento.id_estatus=catalogoestatus.id_estatus where alumnodocumento.id_alumno='$nocont' ORDER BY documentos.id_documento";
 	$result =  mysqli_query($con, $sql2); 
@@ -40,8 +40,6 @@ function imprimir()
 	imprimir();    
 ?>
 <?php include("cabecera.php"); ?>
-<link rel="stylesheet" type="text/css" href="css\Estilo.css">
-<script src="jquery-2.2.3.js" type="text/javascript"></script> 
 <form action="doc.php" method="post" class="relacionar">
 		 <div><label>Alumno</label></br>
         <input id="alum" type="text" value="<?=$valor?>" name="alum" size = "25" disabled >

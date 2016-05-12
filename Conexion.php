@@ -13,7 +13,7 @@
 $db = new pdo(
   'mysql:unix_socket=/cloudsql/serviciosnubetec:basededatosiec',
   'root',  // username
-  ''       // password
+  'toor'       // password
 );
 
 // Using mysqli (connecting from App Engine)

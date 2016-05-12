@@ -18,10 +18,14 @@ handlers:
 - url: /jquery
   static_dir: jquery
 
-- url: /asd.php
-  script: asd.php
 - url: /
   script: nde.php
+
+- url: /inde.php
+  script: inde.php
+
+- url: /asd.php
+  script: asd.php
 
 - url: /inicio.php
   script: Inicio.php

@@ -19,7 +19,7 @@ handlers:
   static_dir: jquery
 
 - url: /
-  script: nde.php
+  script: inde.php
 
 - url: /inde.php
   script: inde.php

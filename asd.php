@@ -1,5 +1,9 @@
 <?php
 include_once "conexion.php";
+if (mysqli_connect_errno()) {
+    printf("Falló la conexión: %s\n", mysqli_connect_error());
+    exit();
+}
 // Check connection
 $user=$_POST['user'];
 $password = $_POST['password'];
@@ -16,7 +20,7 @@ if ($result=mysqli_query($con,$sql))
 
 }
 if ($count==1) {
-   // header("location:inicio.php");  
+    header("location:inicio.php");  
 }
 else
 {

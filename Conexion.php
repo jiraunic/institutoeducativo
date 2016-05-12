@@ -1,5 +1,5 @@
 <?php
-/$sql = new mysqli(
+/*$sql = new mysqli(
   null, // host
   'root', // username
   'toor',     // password
@@ -7,7 +7,7 @@
   null,
   '/cloudsql/serviciosnubetec:basededatosiec'
   );
-
+*/
 // Using PDO_MySQL (connecting from App Engine)
 $db = new pdo(
   'mysql:unix_socket=/cloudsql/serviciosnubetec:basededatosiec',

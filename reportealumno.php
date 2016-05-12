@@ -127,7 +127,7 @@ $result =  mysql_query($sql);
 $row1 = mysql_fetch_row($result);
 $rest = $cuot - $import-$row1[0];
 }
-if ($row1[0]>=$cuot) {
+if ($row1[0]>=$cuot and $movimiento==1) {
 	header("location:inicio.php");
 }
 else
@@ -152,6 +152,14 @@ $fecha = $dia." de ".$mes." de ".$ano;
 
 $import = $import.".00";
 
+echo $nocontrol;
+echo $movimiento ;
+echo $tipomovimiento;
+echo $import;
+echo $mespag ;
+
+
+/*
 // creacion del documento PDF como reporte de pago de alumno
 $pdf = new FPDF();
 $pdf->AddPage();
@@ -224,8 +232,8 @@ $sql = "INSERT INTO alumnopago (id_alumno, id_pago, monto, fecha) VALUES ('$noco
 mysql_query($sql); 
 }
 
+*/
 
-
-
+}
 
 ?>

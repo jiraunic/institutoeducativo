@@ -1,5 +1,4 @@
 <?php include("cabecera.php"); ?>
-
     <div><h1>Bienvenido al sistema</h1></div>
           <form method="" action="AgregarAlumno.php">
              <div><input type="submit" name="agregaralumno" value="Agregar Alumno"></div>

@@ -21,7 +21,7 @@ handlers:
 - url: /asd.php
   script: asd.php
 - url: /
-  script: inde.php
+  script: nde.php
 
 - url: /inicio.php
   script: Inicio.php

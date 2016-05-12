@@ -1,5 +1,5 @@
 <?php
-$sql = new mysqli(
+/$sql = new mysqli(
   null, // host
   'root', // username
   'toor',     // password
